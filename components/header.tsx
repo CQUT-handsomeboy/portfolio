@@ -1,3 +1,5 @@
+import { BookmarkMinus } from 'lucide-react';
+
 export function Header() {
     
     return <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-sm">
@@ -7,16 +9,18 @@ export function Header() {
                     <div className="flex items-center space-x-2">
                         {/* <div className="h-8 w-8 rounded-full bg-linear-to-r from-blue-500 to-purple-600"></div> */}
                         <img className="h-8 w-8 rounded-full" src="/me.jpg"></img>
-                        <span className="text-xl font-bold font-display text-gray-800">ColdRiver Chen</span>
+                        <span className="text-xl font-bold font-display text-gray-800">
+                            <a href='/'>ColdRiver Chen</a>
+                        </span>
                     </div>
 
                     <nav className="flex items-center space-x-6">
-                        {/* <a
-                            href="/#"
+                        <a
+                            href="/blog"
                             className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
                         >
-                            博客
-                        </a> */}
+                            <BookmarkMinus className='w-6 h-6' />
+                        </a>
 
                         {/* GitHub Link */}
                         <a
